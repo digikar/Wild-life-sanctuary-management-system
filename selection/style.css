@@ -1,0 +1,44 @@
+html, body {
+	font-family: "Verdana";
+}
+.selector {
+	height: 300px;
+	width: 600px;
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 200; right: 0;
+}
+.dataFloat {
+	position: relative;
+	width: 300px;
+	max-height: 300px;
+	border: 1px solid black;
+	display: none;
+	overflow: auto;
+}
+.dataLabel {
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding:0;
+}
+.dataLabel:hover {
+	background-color: #0078ff;
+}
+.state, .city, .showData {
+	display: none;
+}
+.showData {
+	position: relative;
+	width: 320px;
+	max-height: 300px;
+	border: 1px solid black;
+	display: none;
+	overflow: auto;
+}
+.itemhover {
+	background-color: #0078ff;
+}
+#delCountry, #delState, #delCity {
+	display: none;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<head>
+		<title> Country, State, City selector </title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="jquery.js"></script>
+		<script src="country.js"></script>
+	</head>
+	<body>
+		<div class="selector">
+			Options:<br /><br />
+			1) Type name and list of matches will appear<br />
+			2) Double click empty field and list of all possible matches will appear<br />
+			3) Single click empty field to make the list disappear again<br />
+			4) Use Arrow keys to navigate through list<br /><br />
+			Todo list:<br /><br />
+			<div class="country">
+				<label>Please enter your country:</label><br />
+				<input type="text" name="country" id="country" maxlength="52" autocomplete="off" />
+				<div class="dataFloat" id="dataCountry"></div>
+				<a href="#" id="delCountry" onclick="delCountry();">Remove</a>
+			</div>
+			<br /><br />
+			<div class="state">
+				<label>Please enter your state:</label><br />
+				<input type="text" name="state" id="state" maxlength="52" autocomplete="off" />
+				<div class="dataFloat" id="dataState"></div>
+				<a href="#" id="delState" onclick="delState();">Remove</a>
+			</div>
+			<br /><br />
+			<div class="city">
+				<label>Please enter your city:</label><br />
+				<input type="text" name="city" id="city" maxlength="52" autocomplete="off" />
+				<div class="dataFloat" id="dataCity"></div>
+				<a href="#" id="delCity" onclick="delCity();">Remove</a>
+			</div>
+			<div class="showData"></div>
+		</div>
+	</body>
+</html>
